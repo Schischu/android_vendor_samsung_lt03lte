@@ -1,0 +1,28 @@
+lp.default.so
+OLD:
+libc.so
+libcutils.so
+libdl.so
+libgeofence.so <-------------
+libgps.utils.so <-------------
+libizat_core.so <-------------
+liblbs_core.so <-------------
+libloc_core.so <-------------
+liblog.so
+libm.so
+libstdc++.so
+libutils.so
+
+NEW:
+libc.so
+libcutils.so
+libdl.so
+libgeofence.so <-------------
+libgps.utils.so <-------------
+libizat_core.so <-------------
+liblbs_core.so <-------------
+libloc_core.so <-------------
+liblog.so
+libm.so
+libstdc++.so
+libutils.so

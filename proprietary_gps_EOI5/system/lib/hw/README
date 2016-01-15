@@ -1,0 +1,31 @@
+OLD:
+libc.so
+libcutils.so
+libdl.so
+libgps.utils.so
+libloc_core.so
+libloc_eng.so
+liblog.so
+libm.so
+libmdmdetect.so <-------------
+libperipheral_client.so <-------------
+libstdc++.so
+libutils.so
+libgeofence.so
+E/%s, dlopen for libgeofence.so failed, error = %s
+
+
+NEW:
+libc.so
+libcutils.so
+libdl.so
+libgps.utils.so <-------------
+libloc_core.so <-------------
+libloc_eng.so <-------------
+liblog.so <-------------
+libm.so
+libstdc++.so
+libutils.so
+libgeofence.so <-------------
+E/%s, dlopen for libgeofence.so failed, error = %s
+

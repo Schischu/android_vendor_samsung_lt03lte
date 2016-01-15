@@ -1,0 +1,73 @@
+libgeofence.so
+OLD:
+libc.so
+libcutils.so
+libgps.utils.so <-------------
+libizat_core.so <-------------
+liblbs_core.so <-------------
+libloc_core.so <-------------
+liblog.so
+libm.so
+libstdc++.so
+libutils.so
+
+NEW:
+libc.so
+libcutils.so
+libgps.utils.so <-------------
+libizat_core.so <-------------
+liblbs_core.so <-------------
+libloc_core.so <-------------
+liblog.so
+libm.so
+libstdc++.so
+libutils.so
+
+libizat_core.so
+OLD:
+libc.so
+libcutils.so
+libgps.utils.so <-------------
+libloc_api_v02.so <-------------
+libloc_core.so <-------------
+libm.so
+libstdc++.so
+libutils.so
+
+NEW:
+libc.so
+libcutils.so
+libgps.utils.so <-------------
+libloc_api_v02.so <-------------
+libloc_core.so <-------------
+libm.so
+libstdc++.so
+libutils.so
+
+liblbs_core.so
+OLD:
+libc.so
+libcutils.so
+libdl.so
+libgps.utils.so <-------------
+libizat_core.so <-------------
+libloc_api_v02.so <-------------
+libloc_core.so <-------------
+libm.so
+libstdc++.so
+libutils.so
+libizat_api_pds.so <-------------
+
+NEW:
+libc.so
+libcutils.so
+libdl.so
+libgps.utils.so <-------------
+libizat_core.so <-------------
+libloc_api_v02.so <-------------
+libloc_core.so <-------------
+libm.so
+libstdc++.so
+libutils.so
+libizat_api_pds.so <-------------
+
