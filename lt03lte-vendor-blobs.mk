@@ -214,7 +214,8 @@ PRODUCT_COPY_FILES_NN += \
 #libqmi_client_qmux.so
 #libqmiservices.so
 
-PRODUCT_COPY_FILES += \
+#Status: Works
+PRODUCT_COPY_FILES_NN += \
     vendor/samsung/lt03lte/proprietary_qmi/system/vendor/lib/libdsutils.so:system/vendor/lib/libdsutils.so:samsung \
     vendor/samsung/lt03lte/proprietary_qmi/system/vendor/lib/libqmi.so:system/vendor/lib/libqmi.so:samsung \
     vendor/samsung/lt03lte/proprietary_qmi/system/vendor/lib/libqmi_cci.so:system/vendor/lib/libqmi_cci.so:samsung \
@@ -224,6 +225,7 @@ PRODUCT_COPY_FILES += \
     vendor/samsung/lt03lte/proprietary_qmi/system/vendor/lib/libqmi_encdec.so:system/vendor/lib/libqmi_encdec.so:samsung \
     vendor/samsung/lt03lte/proprietary_qmi/system/vendor/lib/libqmiservices.so:system/vendor/lib/libqmiservices.so:samsung \
 
+#Status: Unknown
 PRODUCT_COPY_FILES_NN += \
     vendor/samsung/lt03lte/proprietary_qmi_EOI5/system/vendor/lib/libdsutils.so:system/vendor/lib/libdsutils.so:samsung \
     vendor/samsung/lt03lte/proprietary_qmi_EOI5/system/vendor/lib/libqmi.so:system/vendor/lib/libqmi.so:samsung \
@@ -233,6 +235,17 @@ PRODUCT_COPY_FILES_NN += \
     vendor/samsung/lt03lte/proprietary_qmi_EOI5/system/vendor/lib/libqmi_csi.so:system/vendor/lib/libqmi_csi.so:samsung \
     vendor/samsung/lt03lte/proprietary_qmi_EOI5/system/vendor/lib/libqmi_encdec.so:system/vendor/lib/libqmi_encdec.so:samsung \
     vendor/samsung/lt03lte/proprietary_qmi_EOI5/system/vendor/lib/libqmiservices.so:system/vendor/lib/libqmiservices.so:samsung \
+
+#Status: Unknown
+PRODUCT_COPY_FILES += \
+    vendor/samsung/lt03lte/proprietary_qmi_EPD2/system/vendor/lib/libdsutils.so:system/vendor/lib/libdsutils.so:samsung \
+    vendor/samsung/lt03lte/proprietary_qmi_EPD2/system/vendor/lib/libqmi.so:system/vendor/lib/libqmi.so:samsung \
+    vendor/samsung/lt03lte/proprietary_qmi_EPD2/system/vendor/lib/libqmi_cci.so:system/vendor/lib/libqmi_cci.so:samsung \
+    vendor/samsung/lt03lte/proprietary_qmi_EPD2/system/vendor/lib/libqmi_client_qmux.so:system/vendor/lib/libqmi_client_qmux.so:samsung \
+    vendor/samsung/lt03lte/proprietary_qmi_EPD2/system/vendor/lib/libqmi_common_so.so:system/vendor/lib/libqmi_common_so.so:samsung \
+    vendor/samsung/lt03lte/proprietary_qmi_EPD2/system/vendor/lib/libqmi_csi.so:system/vendor/lib/libqmi_csi.so:samsung \
+    vendor/samsung/lt03lte/proprietary_qmi_EPD2/system/vendor/lib/libqmi_encdec.so:system/vendor/lib/libqmi_encdec.so:samsung \
+    vendor/samsung/lt03lte/proprietary_qmi_EPD2/system/vendor/lib/libqmiservices.so:system/vendor/lib/libqmiservices.so:samsung \
 
 #########################
 
@@ -249,7 +262,8 @@ PRODUCT_COPY_FILES_NN += \
 #libqmi.so needed by libqcci_legacy.so
 #libconfigdb.so needed by qmuxd
 #libxml.so needed by libconfigdb.so
-PRODUCT_COPY_FILES += \
+#Status: Works
+PRODUCT_COPY_FILES_WW += \
     vendor/samsung/lt03lte/proprietary_ril/system/bin/qmuxd:system/bin/qmuxd:samsung \
     vendor/samsung/lt03lte/proprietary_ril/system/bin/rild:system/bin/rild:samsung \
     vendor/samsung/lt03lte/proprietary_ril/system/bin/rmt_storage:system/bin/rmt_storage:samsung \
@@ -266,6 +280,7 @@ PRODUCT_COPY_FILES += \
     vendor/samsung/lt03lte/proprietary_ril/system/vendor/lib/libril-qcril-hook-oem.so:system/vendor/lib/libril-qcril-hook-oem.so:samsung \
     vendor/samsung/lt03lte/proprietary_ril/system/vendor/lib/libxml.so:system/vendor/lib/libxml.so:samsung \
 
+#Status: Unknown
 PRODUCT_COPY_FILES_NN += \
     vendor/samsung/lt03lte/proprietary_ril_EOI5/system/bin/qmuxd:system/bin/qmuxd:samsung \
     vendor/samsung/lt03lte/proprietary_ril_EOI5/system/bin/rild:system/bin/rild:samsung \
@@ -282,6 +297,24 @@ PRODUCT_COPY_FILES_NN += \
     vendor/samsung/lt03lte/proprietary_ril_EOI5/system/vendor/lib/libqcci_legacy.so:system/vendor/lib/libqcci_legacy.so:samsung \
     vendor/samsung/lt03lte/proprietary_ril_EOI5/system/vendor/lib/libril-qcril-hook-oem.so:system/vendor/lib/libril-qcril-hook-oem.so:samsung \
     vendor/samsung/lt03lte/proprietary_ril_EOI5/system/vendor/lib/libxml.so:system/vendor/lib/libxml.so:samsung \
+
+#Status: Unknown
+PRODUCT_COPY_FILES += \
+    vendor/samsung/lt03lte/proprietary_ril_EPD2/system/bin/qmuxd:system/bin/qmuxd:samsung \
+    vendor/samsung/lt03lte/proprietary_ril_EPD2/system/bin/rild:system/bin/rild:samsung \
+    vendor/samsung/lt03lte/proprietary_ril_EPD2/system/bin/rmt_storage:system/bin/rmt_storage:samsung \
+    vendor/samsung/lt03lte/proprietary_ril_EPD2/system/bin/time_daemon:system/bin/time_daemon:samsung \
+    \
+    vendor/samsung/lt03lte/proprietary_ril_EPD2/system/lib/libreference-ril.so:system/lib/libreference-ril.so:samsung \
+    vendor/samsung/lt03lte/proprietary_ril_EPD2/system/lib/libril.so:system/lib/libril.so:samsung \
+    vendor/samsung/lt03lte/proprietary_ril_EPD2/system/lib/libsec-ril.so:system/lib/libsec-ril.so:samsung \
+    vendor/samsung/lt03lte/proprietary_ril_EPD2/system/lib/libsecril-client.so:system/lib/libsecril-client.so:samsung \
+    \
+    vendor/samsung/lt03lte/proprietary_ril_EPD2/system/vendor/lib/libconfigdb.so:system/vendor/lib/libconfigdb.so:samsung \
+    vendor/samsung/lt03lte/proprietary_ril_EPD2/system/vendor/lib/libidl.so:system/vendor/lib/libidl.so:samsung \
+    vendor/samsung/lt03lte/proprietary_ril_EPD2/system/vendor/lib/libqcci_legacy.so:system/vendor/lib/libqcci_legacy.so:samsung \
+    vendor/samsung/lt03lte/proprietary_ril_EPD2/system/vendor/lib/libril-qcril-hook-oem.so:system/vendor/lib/libril-qcril-hook-oem.so:samsung \
+    vendor/samsung/lt03lte/proprietary_ril_EPD2/system/vendor/lib/libxml.so:system/vendor/lib/libxml.so:samsung \
 
 #########################
 
@@ -649,7 +682,7 @@ PRODUCT_COPY_FILES_NN += \
 #########################
 
 #DRM
-PRODUCT_COPY_FILES += \
+PRODUCT_COPY_FILES_NN += \
     vendor/samsung/lt03lte/proprietary_drm/system/lib/libdrmdecrypt.so:system/lib/libdrmdecrypt.so:samsung \
     vendor/samsung/lt03lte/proprietary_drm/system/lib/libhdcp2.so:system/lib/libhdcp2.so:samsung \
     vendor/samsung/lt03lte/proprietary_drm/system/lib/libstagefright_hdcp.so:system/lib/libstagefright_hdcp.so:samsung \
@@ -691,6 +724,21 @@ PRODUCT_COPY_FILES_NN += \
     \
     vendor/samsung/lt03lte/proprietary_drm_EOI5/system/vendor/lib/mediadrm/libdrmclearkeyplugin.so:system/vendor/lib/mediadrm/libdrmclearkeyplugin.so:samsung \
     vendor/samsung/lt03lte/proprietary_drm_EOI5/system/vendor/lib/mediadrm/libwvdrmengine.so:system/vendor/lib/mediadrm/libwvdrmengine.so:samsung \
+
+#DRM from hammerhead
+PRODUCT_COPY_FILES += \
+    vendor/samsung/lt03lte/proprietary_drm_hh/lib/libdrmdecrypt.so:system/lib/libdrmdecrypt.so:samsung \
+    vendor/samsung/lt03lte/proprietary_drm_hh/lib/liboemcrypto.so:system/lib/liboemcrypto.so:samsung \
+    vendor/samsung/lt03lte/proprietary_drm_hh/lib/libstagefright_hdcp.so:system/lib/libstagefright_hdcp.so:samsung \
+    \
+    vendor/samsung/lt03lte/proprietary_drm_hh/vendor/lib/libwvdrm_L1.so:system/vendor/lib/libwvdrm_L1.so:samsung \
+    vendor/samsung/lt03lte/proprietary_drm_hh/vendor/lib/libwvm.so:system/vendor/lib/libwvm.so:samsung \
+    vendor/samsung/lt03lte/proprietary_drm_hh/vendor/lib/libWVphoneAPI.so:system/vendor/lib/libWVphoneAPI.so:samsung \
+    vendor/samsung/lt03lte/proprietary_drm_hh/vendor/lib/libWVStreamControlAPI_L1.so:system/vendor/lib/libWVStreamControlAPI_L1.so:samsung \
+    \
+    vendor/samsung/lt03lte/proprietary_drm_hh/vendor/lib/drm/libdrmwvmplugin.so:system/vendor/lib/drm/libdrmwvmplugin.so:samsung \
+    \
+    vendor/samsung/lt03lte/proprietary_drm_hh/vendor/lib/mediadrm/libwvdrmengine.so:system/vendor/lib/mediadrm/libwvdrmengine.so:samsung \
 
 #########################
 
